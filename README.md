@@ -5,8 +5,10 @@
 　GPIO25に接続されたLEDを点灯させるデバイスドライバです.
 
 
-##環境設定
+## 環境設定
+
 　OS:Ubuntu 20.04 LTS
+
 　ハード:Raspberry Pi 4
 
 

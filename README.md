@@ -1,15 +1,35 @@
 # for-driver
 
-GPIO25に接続されたLEDを点灯させるデバイスドライバです。
+## 概要
 
-make
+　GPIO25に接続されたLEDを点灯させるデバイスドライバです.
 
-sudo insmod myled.ko
 
-sudo chmod 666 /dev/myled0
+##環境設定
+　OS:Ubuntu 20.04 LTS
+　ハード:Raspberry Pi 4
 
-と入力して利用してください。
 
-echo 1 > /dev/myled0　と打つと激しく点滅します。
+## 使用方法
 
-echo 1 > /dev/myled0　と打つと若干ゆっくり点滅します。
+　以下に沿ってビルドしてください.
+
+`$ make`
+
+`$ sudo insmod myled.ko`
+
+`$ sudo chmod 666 /dev/myled0`
+
+
+　以下の様に入力する事で点灯します.
+　数値によって点灯の激しさが異なります.
+
+
+`$ echo 1 > /dev/myled0`
+
+`$ echo 0 > /dev/myled0`
+
+
+## ライセンス
+
+ COPYINGに準じます。
